@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap');
+body {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: bold;
+    font-size: 18px;
+}
+nav, .footer{
+    display: flex;
+    color: #13183f;
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.footer{
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+.get-started:hover{
+    background-color: #666CA3;
+}
+
+.get-started-footer{
+    background: linear-gradient(0deg, #F02AA6, #4851FF)
+}
+
+.get-started-footer:hover{
+    background: linear-gradient(0deg, rgb(248, 149, 211), rgb(164, 168, 255));
+}
+
+.get-started-header{
+    margin-left: auto;
+}
+
+.get-started{
+    color: #ffffff;
+    width: 140px;
+    height: 48px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #13183f; 
+    border-radius: 25px;
+}
+
+/* .get-started-message{
+    margin-top: 10px;
+} */
+
+.container{
+    width: 80vw;
+    margin: 0 auto;
+    height: 120vh;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 40% 1fr;
+}
+
+#message, #pic, #grid{
+    border: 2px solid blue;
+}
+
+#header-message{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+footer{
+    background-color: #13183f;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
