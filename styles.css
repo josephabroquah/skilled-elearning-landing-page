@@ -6,6 +6,15 @@ body {
     font-size: 18px;
 }
 
+h1{
+    color: #13183F;
+}
+
+.skilled{
+    font-size: x-large;
+}
+
+
 main {
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
     padding-top: 5vh;
@@ -32,8 +41,9 @@ nav,
     padding-top: 5vh;
     display: grid;
     grid-template-columns: 35% 1fr;
-    grid-template-rows: 45% 1fr;
-    grid-gap: 5% 5%;
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 200px 2%;
+    position: relative;
 }
 
 .pic-logo {
@@ -42,11 +52,13 @@ nav,
 }
 
 
-.top-left-pic{
-    position: relative;
+.drinking-coffee-woman{
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    right: -30%;
+    top: -14%;
     z-index: 0;
-    bottom: 25%;
-    left: 15%;
 }
 
 .get-started-header {
@@ -93,13 +105,25 @@ nav,
     color: #FFA7C3;
     cursor: pointer;
 }
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5% 5%;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: -2;
+    grid-row-end: -1;
+}
 
 .grid-item {
+    height: 250px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 30px;
-    padding-left: 30px;
+    padding: 20px;
     background: #FFFFFF;
     box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
     border-radius: 15px;
@@ -116,21 +140,11 @@ nav,
     color: #F74780;
 }
 
-#grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 30px 50px;
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 2;
-    grid-row-end: -1;
-}
-
 .message {
     font-size: 18px;
     font-weight: lighter;
     line-height: 28px;
+    color: #83869A;
 }
 
 #header-message {
@@ -145,13 +159,62 @@ footer {
     margin-top: 15vh;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .container {
-        width: 100vw;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+    }
+
+    .skilled{
+        font-size: large;
+    }
+
+    .message {
+        font-weight: lighter;
+        line-height: 20px;
+        color: #83869A;
+    }
+
+    .get-started {
+        color: #ffffff;
+        width: 100px;
+        height: 30px;
+        font-weight: lighter;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #13183f;
+        border-radius: 25px;
+    }
+
+    .pic-logo {
+        position: absolute;
+        top: -1.5em;
+        left: 0.5em;
+    }
+
+
+    .container, #grid {
+        width: 80vw;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
+
+    .message, .get-started-grid{
+        font-size: 14px;
+
+    }
+
+    #grid{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
 }
 
 @media  (min-width: 481px) and (max-width: 768px) {
