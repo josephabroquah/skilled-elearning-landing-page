@@ -1,26 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
 
-main{
+main {
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    padding-top: 5vh;
 }
 
-.pic-logo{
-    position: relative;
-    bottom: 10%;
-}
-
-#pic{
-    position: relative;
-    bottom: 20%;
-    left: 20%;
-}
-
-nav, .footer{
+nav,
+.footer {
     display: flex;
     color: #13183f;
     width: 80vw;
@@ -28,12 +20,34 @@ nav, .footer{
     align-items: center;
 }
 
-.footer{
+.footer {
     color: #ffffff;
     justify-content: space-between;
 }
 
-.get-started{
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 5vh;
+    /* height: 120vh; */
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-template-rows: 45% 1fr;
+    grid-gap: 5% 5%;
+}
+
+.pic-logo {
+    position: absolute;
+    top: -1.5em;
+}
+
+#pic {
+    position: relative;
+    bottom: 20%;
+    left: 20%;
+}
+
+.get-started {
     color: #ffffff;
     width: 140px;
     height: 48px;
@@ -41,53 +55,43 @@ nav, .footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #13183f; 
+    background-color: #13183f;
     border-radius: 25px;
 }
 
-.get-started-header{
+.get-started-header {
     margin-left: auto;
 }
 
-.get-started-header:hover{
+.get-started-header:hover {
     background-color: #666CA3;
     cursor: pointer;
 }
 
-.get-started-footer{
+.get-started-footer {
     background: linear-gradient(0deg, #F02AA6, #4851FF)
 }
 
-.get-started-footer:hover{
+.get-started-footer:hover {
     background: linear-gradient(0deg, rgb(248, 149, 211), rgb(164, 168, 255));
     cursor: pointer;
 }
 
-.get-started-message{
+.get-started-message {
     background: linear-gradient(0deg, #F02AA6, #FF6F48);
 }
 
-.get-started-message:hover{
+.get-started-message:hover {
     background: linear-gradient(0deg, rgb(248, 149, 211), rgb(255, 183, 164));
     cursor: pointer;
 }
 
-.get-started-grid:hover{
+.get-started-grid:hover {
     color: #FFA7C3;
     cursor: pointer;
 }
 
-.container{
-    width: 80vw;
-    margin: 0 auto;
-    height: 120vh;
-    display: grid;
-    grid-template-columns: 35% 1fr;
-    grid-template-rows: 45% 1fr;
-    grid-gap: 5% 5%;
-}
-
-.grid-item{
+.grid-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,19 +100,21 @@ nav, .footer{
     background: #FFFFFF;
     box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
     border-radius: 15px;
+    border: 2px red solid;
+    position: relative;
 }
 
-.grid-item-one{
+.grid-item-one {
     color: white;
     background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
     font-size: 32px;
 }
 
-.get-started-grid{
+.get-started-grid {
     color: #F74780;
 }
 
-#grid{
+#grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -119,13 +125,17 @@ nav, .footer{
     grid-row-end: -1;
 }
 
-.message{
+.message {
     font-size: 18px;
     font-weight: lighter;
     line-height: 28px;
 }
 
-footer{
+#header-message {
+    padding-top: 10vh;
+}
+
+footer {
     background-color: #13183f;
     height: 10vh;
     display: flex;
@@ -134,9 +144,14 @@ footer{
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    .container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
-  }
+}
+
+@media  (min-width: 481px) and (max-width: 768px) {
+    
+}
