@@ -53,19 +53,43 @@ nav, .footer{
     width: 80vw;
     margin: 0 auto;
     height: 120vh;
-    border: 1px solid red;
     display: grid;
     grid-template-columns: 30% 1fr;
     grid-template-rows: 40% 1fr;
 }
 
-#message, #pic, #grid{
+/* #message{
+    font-size: 0.8em;
+} */
+
+.grid-item{
+    /* width: 90%; */
+    /* height: 90%; */
+    border: 1px solid red;
+    margin-top: 30px;
+}
+
+
+.header-message, #pic, #grid{
     border: 2px solid blue;
 }
 
-#header-message{
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px 50px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    /* border: 1px solid red; */
+}
+
+.message{
     font-size: 15px;
     font-weight: lighter;
+    line-height: 28px;
 }
 
 footer{
