@@ -9,6 +9,16 @@ main{
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
 }
 
+.pic-logo{
+    position: relative;
+    bottom: 10%;
+}
+
+#pic{
+    position: relative;
+    bottom: 20%;
+    left: 20%;
+}
 
 nav, .footer{
     display: flex;
@@ -23,7 +33,23 @@ nav, .footer{
     justify-content: space-between;
 }
 
-.get-started:hover{
+.get-started{
+    color: #ffffff;
+    width: 140px;
+    height: 48px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #13183f; 
+    border-radius: 25px;
+}
+
+.get-started-header{
+    margin-left: auto;
+}
+
+.get-started-header:hover{
     background-color: #666CA3;
     cursor: pointer;
 }
@@ -35,22 +61,6 @@ nav, .footer{
 .get-started-footer:hover{
     background: linear-gradient(0deg, rgb(248, 149, 211), rgb(164, 168, 255));
     cursor: pointer;
-}
-
-.get-started-header{
-    margin-left: auto;
-}
-
-.get-started{
-    color: #ffffff;
-    width: 140px;
-    height: 48px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #13183f; 
-    border-radius: 25px;
 }
 
 .get-started-message{
@@ -73,7 +83,8 @@ nav, .footer{
     height: 120vh;
     display: grid;
     grid-template-columns: 35% 1fr;
-    grid-template-rows: 40% 1fr;
+    grid-template-rows: 45% 1fr;
+    grid-gap: 5% 5%;
 }
 
 .grid-item{
@@ -121,3 +132,11 @@ footer{
     align-items: center;
     margin-top: 15vh;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+  }
