@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
 body {
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
+
+main{
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+
+
 nav, .footer{
     display: flex;
     color: #13183f;
@@ -19,6 +25,7 @@ nav, .footer{
 
 .get-started:hover{
     background-color: #666CA3;
+    cursor: pointer;
 }
 
 .get-started-footer{
@@ -27,6 +34,7 @@ nav, .footer{
 
 .get-started-footer:hover{
     background: linear-gradient(0deg, rgb(248, 149, 211), rgb(164, 168, 255));
+    cursor: pointer;
 }
 
 .get-started-header{
@@ -45,33 +53,48 @@ nav, .footer{
     border-radius: 25px;
 }
 
-/* .get-started-message{
-    margin-top: 10px;
-} */
+.get-started-message{
+    background: linear-gradient(0deg, #F02AA6, #FF6F48);
+}
+
+.get-started-message:hover{
+    background: linear-gradient(0deg, rgb(248, 149, 211), rgb(255, 183, 164));
+    cursor: pointer;
+}
+
+.get-started-grid:hover{
+    color: #FFA7C3;
+    cursor: pointer;
+}
 
 .container{
     width: 80vw;
     margin: 0 auto;
     height: 120vh;
     display: grid;
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 35% 1fr;
     grid-template-rows: 40% 1fr;
 }
 
-/* #message{
-    font-size: 0.8em;
-} */
-
 .grid-item{
-    /* width: 90%; */
-    /* height: 90%; */
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 30px;
+    padding-left: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
 }
 
+.grid-item-one{
+    color: white;
+    background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+    font-size: 32px;
+}
 
-.header-message, #pic, #grid{
-    border: 2px solid blue;
+.get-started-grid{
+    color: #F74780;
 }
 
 #grid{
@@ -83,11 +106,10 @@ nav, .footer{
     grid-column-end: -1;
     grid-row-start: 2;
     grid-row-end: -1;
-    /* border: 1px solid red; */
 }
 
 .message{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: lighter;
     line-height: 28px;
 }
@@ -97,4 +119,5 @@ footer{
     height: 10vh;
     display: flex;
     align-items: center;
+    margin-top: 15vh;
 }
