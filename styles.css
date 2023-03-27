@@ -52,7 +52,7 @@ nav,
 }
 
 
-.drinking-coffee-woman{
+#drinking-coffee-woman{
     position: absolute;
     width: 70%;
     height: 60%;
@@ -212,8 +212,23 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
     }
+
+    .grid-item{
+        width: 80%;
+        height: 180px;
+    }
+
+    .grid-item-one{
+        font-size: 18px;
+        height: 70px;
+        margin-bottom: 15px;
+    }
+
+    /* #drinking-coffee-woman{
+        width: 100%;
+        height: 100%;
+    } */
 
 }
 
