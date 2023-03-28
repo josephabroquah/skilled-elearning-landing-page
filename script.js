@@ -1,1 +1,0 @@
-document.getElementById("drinking-coffee-woman").src = "top-left-img-small.png";
