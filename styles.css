@@ -58,10 +58,6 @@ h1{
     position: relative;
 }
 
-.big-pic{
-    /* border: 2px black solid; */
-}
-
 #drinking-coffee-woman{
     position: absolute;
     max-width: 100%;
@@ -134,7 +130,6 @@ h1{
     grid-row-start: -2;
     grid-row-end: -1;
     justify-items: center;
-    border: red 2px solid;
     grid-row-gap: 5%;
     margin-top: 5%;
     padding: 2%;
@@ -279,7 +274,6 @@ footer {
         grid-row-start: -2;
         grid-row-end: -1;
         justify-items: center;
-        border: red 2px solid;
         padding: 2%;
         grid-column-gap: 10px;
     }
