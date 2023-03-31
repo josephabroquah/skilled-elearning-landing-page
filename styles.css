@@ -24,7 +24,7 @@ nav,
 h1{
     color: #13183F;
     font-weight: 800;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
 }
 
 #header-message {
@@ -32,7 +32,7 @@ h1{
 }
 
 #header-message .message{
-    width: 70%
+    width: 90%;
 }
 
 .message {
@@ -41,6 +41,7 @@ h1{
     line-height: 28px;
     color: #83869A;
 }
+
 
 .skilled{
     font-size: x-large;
