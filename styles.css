@@ -184,12 +184,6 @@ footer {
         font-size: large;
     }
 
-    .message {
-        font-weight: lighter;
-        line-height: 20px;
-        color: #83869A;
-    }
-
     .get-started {
         color: #ffffff;
         width: 120px;
@@ -219,6 +213,10 @@ footer {
         gap: 10px;
     }
 
+    nav, .footer{
+        width: 80vw !important;
+    }
+    
     .message, .get-started-grid{
         font-size: 14px;
     }
@@ -246,14 +244,23 @@ footer {
 
     #header-message{
         padding-top: 0px;
-        width: 75vw;
         margin-bottom: 0px;
         margin: 0 auto;
     }
+
     h1{
-        font-size: x-large;
+        font-size: xx-large;
         font-weight: 800;
     }
+
+    .message {
+        font-weight: lighter;
+        font-size: medium;
+        line-height: 20px;
+        color: #83869A;
+        width: 100% !important;
+    }
+    
 }
 
 @media  (min-width: 481px) and (max-width: 768px) {
